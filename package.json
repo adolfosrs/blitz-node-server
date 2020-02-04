@@ -1,0 +1,30 @@
+{
+  "name": "blitz-board-node",
+  "version": "0.0.1",
+  "description": "blitz-board-node",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/*.js -t 3500",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "grpc": "^1.24.2",
+    "moment": "^2.22.2"
+  },
+  "engines": {
+    "node": "9.2.0"
+  }
+}
