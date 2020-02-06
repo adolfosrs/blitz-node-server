@@ -1,6 +1,6 @@
 'use strict';
 
-const InvoiceModule = require('../modules/invoice.js');
+const InvoiceModule = require('../modules/Invoice.js');
 
 function createInvoice(req, res) {
   const body = req.body;
@@ -24,6 +24,5 @@ function createInvoice(req, res) {
 }
 
 module.exports = {
-  createInvoice,
-  withdraw
+  createInvoice
 };

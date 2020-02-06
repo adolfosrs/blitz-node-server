@@ -20,6 +20,5 @@ router.use((req, res, next) => {
 });
 
 router.post('/createInvoice', InvoiceController.createInvoice);
-router.post('/withdraw', ServiceProvider.withdraw);
 
 module.exports = router;
