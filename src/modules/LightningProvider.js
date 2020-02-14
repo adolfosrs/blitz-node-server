@@ -1,6 +1,6 @@
 const fs = require('fs');
 const grpc = require('grpc');
-const lnrpc = grpc.load('rpc.proto').lnrpc;
+const lnrpc = grpc.load(`${__dirname}/../../rpc.proto`).lnrpc;
 process.env.GRPC_SSL_CIPHER_SUITES = 'HIGH+ECDSA'
 const lndCert = fs.readFileSync('/home/bitcoin/.lnd/tls.cert');
 const sslCreds = grpc.credentials.createSsl(lndCert);
